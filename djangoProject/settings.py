@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dynamo_kiev.apps.DynamoKievConfig'
+    'dynamo_kiev.apps.DynamoKievConfig',
+    'news.apps.NewsConfig'
 ]
 
 MIDDLEWARE = [
