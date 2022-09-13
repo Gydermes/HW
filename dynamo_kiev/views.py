@@ -10,5 +10,5 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("<h4>Страница чемпионов</h4>")
+    return render(request, 'dynamo_kiev/free.html')
 
