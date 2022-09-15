@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Artiles
+from .forms import ActiclesForm
 # Create your views here.
 
 
@@ -9,4 +10,10 @@ def news_home(request):
 
 
 def create(request):
-    return render(request, 'news/create.html')
+    form = ActiclesForm()
+
+    data = {
+        'form': form
+    }
+
+    return render(request, 'news/create.html', data)
